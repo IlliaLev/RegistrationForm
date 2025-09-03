@@ -17,10 +17,14 @@
             <label for="new-password">Create a New Password: <input type="password" name="" id="new-password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
         <fieldset>
-            <label><input type="radio" name=""> Personal</label>
-            <label><input type="radio" name=""> Business</label>
+            <legend>Account type (required)</legend>
+            <label for="personal-account"><input type="radio" name="account-type" id="personal-account" checked> Personal</label>
+            <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business</label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label>Upload a profile picture: <input type="file" name=""></label>
+        </fieldset>
+        <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
         <input type="submit" value="Submit">
     </form>
 </body>
